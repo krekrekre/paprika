@@ -1,0 +1,128 @@
+
+.stats {
+    .container {
+        max-width: 1164px;
+        margin: 0 auto;
+        padding: 0px 20px;
+        
+        .company-stats {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            h2 {
+                padding: 90px 0px;
+                margin: 0;
+                max-width: 80%;
+                text-align: center;
+            }
+            .facts {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 50px 24px;
+               
+
+                p {
+
+                    display: flex;
+                    align-items: flex-start;
+                    width: clamp(200px, 100%, 340px);
+                    margin: 0;
+                    column-gap: 15px;
+                    line-height: 1.4;
+                    font-size: 1rem;
+                    font-weight: 500;
+
+                    span {
+                        font-size: 2.5rem;
+                        text-align: right;
+                        letter-spacing: -.2px;
+                        text-transform: uppercase;
+                        color: #b02c2b;
+                        font-family: "PT Serif", serif;
+                        font-weight: 700;
+                        line-height: .9;
+                    }
+                }
+            }
+        }
+        .company-dealings {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+
+            h2 {
+                padding: 120px 0px;
+                margin: 0;
+            }
+
+            .our-business {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 32px;
+                    margin: 1.6rem 0px;
+                    
+                    li {
+                        display: flex;
+                        align-items: center;
+                        list-style: none;
+                        font-weight: bold;
+                        &::before {
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 8px;
+                            content: "";
+                            border-radius: 50%;
+                            background-color: #b02c2b;
+                        }
+                        &:first-child::before {
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 8px;
+                            content: "";
+                            border-radius: 50%;
+                            background-color: #0a5229;
+
+                        }
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .our-cetificates {
+
+            margin: 150px 0px;
+
+            .certificates-wrapper {
+
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                img {
+                    width: 130px;
+                    max-width: 100%;
+                    padding: 15px;
+                }
+            }
+        }    
+    }
+
+
+}

@@ -27,6 +27,4 @@ closeMenu.addEventListener("click", () => {
         });
 
 
-console.log('hello')
-console.log('hello2')
 AOS.init();

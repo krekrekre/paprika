@@ -1,80 +1,74 @@
-
 footer {
-    
-    background: linear-gradient(90deg, #15a652, #118b45, #0c6231, #0a532a);
-    color: white;
-    margin: 0;
-    height: 100%;
-    padding: 5px 25px 0px 25px;
+  background: linear-gradient(90deg, #15a652, #118b45, #0c6231, #0a532a);
+  color: white;
+  margin: 0;
+  height: 100%;
+  padding: 5px 25px 0px 25px;
 
-    .footer-wrapper{
-        
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1164px;
+    margin: 0 auto;
 
+    @include md {
+      flex-direction: row;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include md {
+        font-size: 0.9rem;
+        align-items: start;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include md {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1164px;
-        margin: 0 auto;
-
+        align-items: flex-end;
+      }
+      ul {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        gap: 15px;
+        margin-bottom: 3px;
+      }
+      p {
+        margin-top: 1rem;
         @include md {
-            flex-direction: row;
+          margin: 0px 0px 1rem 0px;
+          font-size: 1rem;
         }
-        .left {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            @include md {
-                font-size: 0.9rem;
-                align-items: start;
-            }
-            p {
-                text-align: center;
-            } 
+        a {
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
         }
-        .right {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            @include md {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-            }
-            ul {
-                display: flex;
-                width: 100%;
-                padding: 0;
-                list-style: none;
-                gap: 15px;
-                margin-bottom: 3px;
-                
-            }
-            p {
-                margin-top: 1rem;
-                @include md {
-                    margin: 0px 0px 1rem 0px;
-                    font-size: 1rem;
-                }
-                a {
-                    
-                    color: white;
-                    text-decoration: none;
-                    cursor: pointer;
-                }
-            }
-        }
+      }
     }
+  }
 }
 .copyright {
-    padding: 0px 25px;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(90deg, #118b44, #0e763b, #0c5e2f, #084622);
-    p {
-        font-size: 0.8rem;
-        padding-bottom: 0px;
-        color: white;
-        text-align: center;
-    }
+  padding: 0px 25px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #118b44, #0e763b, #0c5e2f, #084622);
+  p {
+    font-size: 0.8rem;
+    padding-bottom: 0px;
+    color: white;
+    text-align: center;
+  }
 }
